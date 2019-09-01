@@ -1,0 +1,23 @@
+<div class="container-signup">
+<form class="form-signup" (ngSubmit)="doRegister()" [formGroup]="signInForm">
+  <div class="form-signup__field">
+    <label for="">Nome:</label>
+    <input type="text" class="form-signup__input" formControlName="name">
+  </div>
+  <div class="form-signup__field">
+    <label for="">Usuário:</label>
+    <input type="text" class="form-signup__input" formControlName="user">
+  </div>
+  <div class="form-signup__field">
+      <label for="">Email:</label>
+      <input type="email" class="form-signup__input" formControlName="email">
+  </div>
+  <div class="form-signup__field">
+    <label for="">Senha:</label>
+    <input type="password" class="form-signup__input" formControlName="password">
+  </div>
+  <div class="form-signup__field--buton">
+    <button class="form-signup__button" type="submit">Cadastrar</button>
+  </div>
+</form>
+</div>

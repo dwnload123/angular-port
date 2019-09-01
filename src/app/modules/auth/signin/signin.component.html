@@ -1,0 +1,9 @@
+<div class="form-container">
+<form action="" class="form-signin" (ngSubmit)="login()" [formGroup]="signInForm">
+  <label for="">Usuário / Email :</label>
+  <input type="text" class="form-signin__input" formControlName="email">
+  <label for="">Senha :</label>
+  <input type="password" class="form-signin__input" formControlName="password">
+  <button  class="form-signin__button" type="submit">Entrar</button>
+</form>
+</div>
