@@ -1,0 +1,7 @@
+<div class="container">
+  <app-title [titleText]="titleText" style="width:100%"></app-title>
+  <div class="container-row" *ngFor="let courseCard of listCoursesCard">
+    <app-card [cardTitle]="courseCard.title" [cardImage]="courseCard.image" [cardDescription]="courseCard.description"></app-card>
+  </div>
+</div>
+

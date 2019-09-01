@@ -1,0 +1,17 @@
+.header-container{
+  display:flex;
+  flex-direction: row-reverse;
+  background-color:#29b6f6;
+  box-shadow: 0px 2px 2px #ccc;
+}
+
+.menu-item{
+  display:flex;
+  justify-content: space-around;
+  list-style: none;
+  width:100%;
+}
+
+.menu-item__item{
+  padding:0.8rem;
+}

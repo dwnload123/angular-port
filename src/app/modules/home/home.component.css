@@ -1,0 +1,15 @@
+.container{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  width:90%;
+}
+
+.container-row{
+  width:25%;
+  display:flex;
+  justify-content: space-around;
+  background-color:white;
+  margin:2rem 0 2rem 0;
+}

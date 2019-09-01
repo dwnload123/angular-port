@@ -1,0 +1,11 @@
+.container-title{
+  display:flex;
+  justify-content: center;
+  margin:3rem 0 5rem 0;
+  border-bottom:1px solid #29b6f6;
+  padding:0.5rem;
+}
+
+.container-title__text{
+  color:#29b6f6;
+}
