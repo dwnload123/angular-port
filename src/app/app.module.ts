@@ -8,6 +8,8 @@ import { ButtonComponent } from './shared/button/button.component';
 import { TitleComponent } from './shared/title/title.component';
 import { HomeComponent } from './modules/home/home.component';
 import { CardComponent } from './shared/card/card.component';
+import { SigninComponent } from './modules/signin/signin.component';
+import { SignupComponent } from './modules/signup/signup.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { CardComponent } from './shared/card/card.component';
     ButtonComponent,
     TitleComponent,
     HomeComponent,
-    CardComponent
+    CardComponent,
+    SigninComponent,
+    SignupComponent,
   ],
   imports: [
     BrowserModule,
