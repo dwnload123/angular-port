@@ -18,6 +18,8 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { environment } from '../environments/environment';
 import { AuthGuardService } from './services/auth/auth.guard';
 import { UserComponent } from './modules/user/user.component';
+import { UserInfoComponent } from './modules/user/user-info/user-info.component';
+import { AngularFontAwesomeModule } from 'angular-font-awesome';
 
 @NgModule({
   declarations: [
@@ -30,11 +32,13 @@ import { UserComponent } from './modules/user/user.component';
     SigninComponent,
     SignupComponent,
     UserComponent,
+    UserInfoComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    AngularFontAwesomeModule,
     ReactiveFormsModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireAuthModule

@@ -19,6 +19,7 @@ export class AuthService {
   login(email: string,password: string){
     return this.fAuth.auth.signInWithEmailAndPassword(email ,password)
           .then((auth) => {
+            console.log(auth);
             const { uid } = auth.user;
             localStorage.setItem('token', uid);
             this.router.navigate(['user'  , {uid}]);

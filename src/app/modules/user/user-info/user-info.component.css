@@ -1,0 +1,30 @@
+.sidenav{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width:15vw;
+    height: 92vh;
+    background-color:#45454d;
+}
+
+.sidenav__menu{
+    margin-top:30vh;
+    list-style: none;
+    color:white;
+}
+
+.sidenav__menu-item{
+    padding:0.9rem;
+    width:15vw;
+    border-bottom: 1px solid white;
+    cursor: pointer;
+}
+
+.sidenav__menu-icon{
+    color:white;
+    margin-right: 0.8rem;
+}
+
+.sidenav__menu-item:hover{
+    background-color:#41aaa8;
+}
