@@ -1,8 +1,9 @@
 <header class="header-container">
   <div>
     <ul class="menu-item">
-      <li class="menu-item__item"><app-button [buttonText]="'Sign In'" (click)="signIn()"></app-button></li>
-      <li class="menu-item__item"><app-button [buttonText]="'Sign Up'" (click)="signUp()"></app-button></li>
+      <li class="menu-item__item"><app-button [buttonText]="'Sign In'" (click)="signIn()" *ngIf="!isLogged"></app-button></li>
+      <li class="menu-item__item"><app-button [buttonText]="'Sign Up'" (click)="signUp()" *ngIf="!isLogged"></app-button></li>
+      <li class="menu-item__item"><app-button [buttonText]="'Sign Out'" (click)="signOut()" *ngIf="isLogged"></app-button></li>
     </ul>
   </div>
 </header>

@@ -1,8 +1,6 @@
 .container-signup{
   display:flex;
   justify-content: center;
-  align-items: center;
-  height: 80vh;
   width:90%;
   margin:0 auto;
 }
@@ -15,6 +13,7 @@
   border:1px solid #29b6f6;
   padding:5rem;
   border-radius: 0.5rem;
+  margin-top:5rem !important;
 }
 
 .form-signup__field{

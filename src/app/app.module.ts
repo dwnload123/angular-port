@@ -16,6 +16,8 @@ import { AngularFireAuthModule } from '@angular/fire/auth';
 import { ReactiveFormsModule } from '@angular/forms';
 
 import { environment } from '../environments/environment';
+import { AuthGuardService } from './services/auth/auth.guard';
+import { UserComponent } from './modules/user/user.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +29,7 @@ import { environment } from '../environments/environment';
     CardComponent,
     SigninComponent,
     SignupComponent,
+    UserComponent,
   ],
   imports: [
     BrowserModule,
@@ -36,7 +39,7 @@ import { environment } from '../environments/environment';
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireAuthModule
   ],
-  providers: [],
+  providers: [AuthGuardService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
